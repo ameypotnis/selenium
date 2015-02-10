@@ -1,3 +1,3 @@
 # selenium
 
-mvn test
+run 'GoogleTest'
