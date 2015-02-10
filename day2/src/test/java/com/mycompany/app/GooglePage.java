@@ -26,16 +26,4 @@ public final class GooglePage {
     public static ElementsCollection verifyResults() {
         return $$("#ires li.g");
     }
-    /*public static void clickToggleAll() {
-        Selenide.$("#toggle-all").click();
-    }
-    public static void clickClearCompleted() {
-        Selenide.$("#clear-completed").click();
-    }
-    public static void addNewTodo(String todo) {
-        Selenide.$("#new-todo").setValue(todo).pressEnter();
-    }
-    public static ElementsCollection getAllTodos() {
-        return Selenide.$$("#todo-list li");
-    }*/
 }
