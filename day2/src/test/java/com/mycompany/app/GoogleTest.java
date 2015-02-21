@@ -20,10 +20,10 @@ public class GoogleTest {
     @BeforeClass
     public static void beforeClass() {
         System.setProperty("selenide.baseUrl", "http://www.google.com");
-        System.setProperty("browser", "chrome");
-        System.setProperty("webdriver.chrome.driver", "day2/src/test/resources/chromedriver");
-//        System.setProperty("browser", "phantomjs");
-//        System.setProperty("phantomjs.binary.path", "day2/src/test/resources/phantomjs");
+//        System.setProperty("browser", "chrome");
+//        System.setProperty("webdriver.chrome.driver", "day2/src/test/resources/chromedriver");
+        System.setProperty("browser", "phantomjs");
+        System.setProperty("phantomjs.binary.path", "day2/src/test/resources/phantomjs");
     }
     @AfterClass
     public static void afterClass() {
