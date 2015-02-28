@@ -1,6 +1,7 @@
 package com.mycompany.app;
 
 import com.codeborne.selenide.ElementsCollection;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -23,5 +24,12 @@ public class StepDefs {
     public void I_should_see_results(String count) throws Throwable {
         ElementsCollection elements = GooglePage.verifyResults();
         elements.shouldHave(size(Integer.parseInt(count)));
+    }
+
+    @Then("^I should land on \"([^\"]*)\" site$")
+    public void I_should_land_on_site(String title) throws Throwable {
+        // Express the Regexp above with the code you wish you had
+        //throw new PendingException();
+        WikiPage.shouldVerifyTitle(title);
     }
 }

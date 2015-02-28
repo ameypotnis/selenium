@@ -16,10 +16,10 @@ public class AppTest {
     @Before
     public void setUp() {
         System.setProperty("selenide.baseUrl", "http://www.google.com");
-        System.setProperty("browser", "chrome");
-        System.setProperty("webdriver.chrome.driver", "day2/src/test/resources/chromedriver");
-//        System.setProperty("browser", "phantomjs");
-//        System.setProperty("phantomjs.binary.path", "day2/src/test/resources/phantomjs");
+       // System.setProperty("browser", "chrome");
+        //System.setProperty("webdriver.chrome.driver", "day2/src/test/resources/chromedriver");
+       System.setProperty("browser", "phantomjs");
+        System.setProperty("phantomjs.binary.path", "day2/src/test/resources/phantomjs");
     }
 
     @org.junit.Test
@@ -29,3 +29,5 @@ public class AppTest {
         $$("#ires li.g").shouldHave(size(10));
     }
 }
+
+
